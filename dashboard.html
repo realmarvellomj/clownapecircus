@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ringmaster Dashboard — Clown Ape Circus</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="dashboard.css"></head>
+<body>
+<header class="nav-wrap"><a class="brand" href="index.html"><img src="assets/clown-ape-circus-logo.png" alt="Clown Ape Circus"></a><div class="dash-actions"><span id="adminEmail"></span><button class="btn btn-secondary" id="logout">Sign out</button></div></header>
+<main class="dashboard">
+<div class="dash-head"><div><span class="kicker">RINGMASTER CONTROL</span><h1>The Application Tent.</h1><p>Review applicants, inspect proof, and decide who gets through the gates.</p></div><div class="dash-head-actions"><button class="btn btn-secondary" id="refresh">Refresh Applications</button><a class="btn btn-primary" href="index.html#whitelist">View Public Whitelist Checker ↗</a></div></div>
+<div id="authBox" class="auth-box">
+  <h2>Ringmaster Login</h2><p>Use the email/password account you created in Supabase Authentication.</p>
+  <form id="loginForm"><input id="email" type="email" placeholder="ringmaster@email.com" required><input id="password" type="password" placeholder="Password" required><button class="btn btn-primary full">Enter The Control Room →</button><div id="loginStatus" class="form-status"></div></form>
+</div>
+<div id="appArea" hidden>
+  <div class="stats"><div><small>TOTAL</small><strong id="total">0</strong></div><div><small>PENDING</small><strong id="pending">0</strong></div><div><small>APPROVED</small><strong id="approved">0</strong></div><div><small>REJECTED</small><strong id="rejected">0</strong></div></div>
+  <div class="filters"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="join">Join</button><button class="filter" data-filter="collab">Collab</button><button class="filter" data-filter="pending">Pending</button><button class="filter" data-filter="approved">Approved</button><button class="filter" data-filter="rejected">Rejected</button><input id="search" placeholder="Search applications…"></div>
+  <div id="applicationList" class="application-list"></div>
+  <section class="whitelist-admin" id="whitelistAdmin">
+    <div class="admin-section-head"><div><span class="kicker">RINGMASTER LIST</span><h2>Whitelist Management.</h2><p>Add approved wallets, search the list, and revoke access when needed.</p></div><strong id="whitelistCount">0 ACTIVE</strong></div>
+    <form id="whitelistAdminForm" class="whitelist-admin-form">
+      <input id="adminWallet" name="wallet_address" placeholder="0x..." required>
+      <input id="adminWhitelistNote" name="note" placeholder="Optional note (e.g. Wave 1)">
+      <button class="btn btn-primary" type="submit">Add To Whitelist →</button>
+      <div id="whitelistAdminStatus" class="form-status"></div>
+    </form>
+    <div class="whitelist-admin-tools"><input id="whitelistSearch" placeholder="Search whitelist wallets…"><button class="filter active" id="whitelistRefresh" type="button">Refresh List</button></div>
+    <div id="whitelistList" class="whitelist-list"></div>
+  </section>
+</div>
+</main>
+<div class="modal" id="reviewModal"><div class="modal-backdrop" data-close></div><div class="modal-card review-card"><button class="close" data-close>×</button><div id="reviewContent"></div></div></div>
+<script src="config.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="dashboard.js"></script>
+</body></html>

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#05050a">
+<meta name="description" content="Clown Ape Circus — 10,000 Clown Apes. One Circus. Endless chaos.">
+<title>Clown Ape Circus — Welcome To The Carcus</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="intro-active">
+<div class="intro" id="intro">
+  <video id="introVideo" autoplay muted playsinline preload="auto">
+    <source src="assets/carcus-intro.mp4" type="video/mp4">
+  </video>
+  <button class="sound-toggle" id="soundToggle" type="button" aria-label="Toggle intro sound">🔇 Sound</button>
+  <button class="skip-intro" id="skipIntro" type="button">Enter the Carcus →</button>
+</div>
+
+<audio id="siteAudio" preload="auto" loop>
+  <source src="assets/carcus-intro.mp4" type="audio/mp4">
+</audio>
+
+<div class="site" id="site" aria-hidden="true">
+<header class="nav-wrap">
+  <a class="brand" href="#home" aria-label="Clown Ape Circus"><img src="assets/clown-ape-circus-logo.png" alt="Clown Ape Circus"></a>
+  <div class="nav-controls">
+    <button class="site-sound-toggle" id="siteSoundToggle" type="button" aria-label="Toggle website sound">🔇 Sound</button>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+  </div>
+  <nav id="nav">
+    <a href="#home">Home</a><a href="#gallery">Gallery</a><a href="#whitepaper">Whitepaper</a><a href="#mint">Mint</a><a href="#whitelist">Whitelist</a><a href="#game">Game</a><a href="#collab">Collab</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-stage-light"></div>
+  <div class="hero-curtain hero-curtain-l"></div><div class="hero-curtain hero-curtain-r"></div>
+  <div class="hero-content">
+    <span class="eyebrow">THE CIRCUS IS OPEN</span>
+    <h1>Welcome To The <span class="carcus-word">C<span class="arc-letter"><img src="assets/arc-mark.png" alt="Arc"></span>RCUS</span></h1>
+    <p>10,000 Clown Apes are stepping into the ring. Pick a side, grab your ticket and join the chaos.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary" data-modal="joinModal">Whitelist — Join The Carcus</button>
+      <a class="btn btn-secondary" href="https://x.com/ClownApeCircus" target="_blank" rel="noopener">Twitter ↗</a>
+      <button class="btn btn-secondary" data-modal="collabModal">Collaboration Application</button>
+    </div>
+    <div class="quick-links"><a href="#gallery">Gallery</a><a href="#whitepaper">Whitepaper</a><a href="#mint">Mint Details</a></div>
+  </div>
+  <div class="scroll-cue">SCROLL TO ENTER <span>↓</span></div>
+</section>
+
+<div class="marquee"><div>WELCOME TO THE CARCUS ✦ 10,000 CLOWN APES ✦ COMMUNITY FIRST ✦ CURTAINS OPEN ✦</div></div>
+
+<section class="section lore-section" id="lore">
+  <div class="section-heading"><div><span class="kicker">01 / THE LORE</span><h2>The Circus Has No Exit.</h2></div>
+  <p>Some apes came for the show. Some came for the alpha. The ones who stayed became the Circus.</p></div>
+  <div class="lore-grid">
+    <article><span>ACT I</span><h3>The Invitation</h3><p>A strange ticket appears. No address. No instructions. Just one message: <em>meet us under the big top.</em></p></article>
+    <article><span>ACT II</span><h3>The Apes Arrive</h3><p>10,000 Clown Apes take their places. Every character is different. Every seat is part of the audience.</p></article>
+    <article><span>ACT III</span><h3>The Crowd Becomes The Show</h3><p>The community is not watching from the sidelines. Members help create the lore, collaborations, raids, art and next acts.</p></article>
+  </div>
+</section>
+
+<section class="section gallery-section" id="gallery">
+  <div class="section-heading"><div><span class="kicker">02 / THE MENAGERIE</span><h2>Meet The Cast.</h2></div><p>Step into the ring and meet the characters of Clown Ape Circus.</p></div>
+  <div class="gallery-grid">
+    <article class="gallery-card image-card card-a"><img src="assets/Ringmaster.jpg" alt="The Ringmaster Clown Ape"><div class="gallery-overlay"><span>THE RINGLEADER</span><i>01</i></div></article>
+    <article class="gallery-card image-card card-b"><img src="assets/Trickster.jpg" alt="The Trickster Clown Ape"><div class="gallery-overlay"><span>THE TRICKSTER</span><i>02</i></div></article>
+    <article class="gallery-card image-card card-c"><img src="assets/Showman.jpg" alt="The Showman Clown Ape"><div class="gallery-overlay"><span>THE SHOWMAN</span><i>03</i></div></article>
+    <article class="gallery-card image-card card-d"><img src="assets/Wildcard.jpg" alt="The Wild Card Clown Ape"><div class="gallery-overlay"><span>THE WILD CARD</span><i>04</i></div></article>
+  </div>
+</section>
+
+<section class="section whitepaper-section" id="whitepaper">
+  <div class="paper-intro">
+    <span class="kicker">03 / THE WHITEPAPER</span>
+    <h2>A Circus Built<br>By Its Crowd.</h2>
+    <p>Clown Ape Circus is a community-first digital collectible project. The Apes are the cast, but the community is the show. We want the Circus to feel alive: a place where collectors, creators, communities and projects can meet, collaborate and make something worth remembering.</p>
+  </div>
+  <div class="paper-cards">
+    <article><span>PHILOSOPHY</span><h3>Community Over Spectacle</h3><p>The collection is a starting point, not the finish line. Members help shape events, collaborations, culture and the direction of the Circus.</p></article>
+    <article><span>COLLECTION</span><h3>10,000 Characters</h3><p>A 10,000-piece cast designed to feel instantly recognizable while leaving room for traits, personalities and rare characters to become community icons.</p></article>
+    <article><span>UTILITY</span><h3>Your Ticket Gets You In</h3><p>Membership is about access to the evolving Circus: community activities, partner opportunities, special events, collaborative moments and future ecosystem experiences.</p></article>
+    <article><span>ECOSYSTEM</span><h3>Build With The Ring</h3><p>Projects and communities can apply for Raid, Alpha Call or Collab Tweet support. The Circus grows by connecting its crowd with other builders.</p></article>
+  </div>
+  <div class="roadmap">
+    <div class="roadmap-title"><span class="kicker">ROADMAP</span><h3>Four Acts. One Growing Circus.</h3></div>
+    <div class="roadmap-track">
+      <article><b>01</b><strong>Raise The Tent</strong><p>Brand, community, lore, art and launch infrastructure.</p></article>
+      <article><b>02</b><strong>Fill The Seats</strong><p>Launch the 10,000 Clown Ape collection and welcome the first cast.</p></article>
+      <article><b>03</b><strong>Make Some Noise</strong><p>Community events, collaborations, partner activations and ecosystem experiments.</p></article>
+      <article><b>04</b><strong>Write The Next Act</strong><p>Let the community decide what deserves a bigger stage.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section mint-section" id="mint">
+  <div class="mint-inner">
+    <span class="kicker">04 / THE BIG SHOW</span><h2>Your Ticket To The Circus.</h2>
+    <p>There are <strong>10,000 CLOWN APES</strong> in the Circus. The official ticket fee and mint timing will be published here when finalized.</p>
+    <div class="mint-grid"><div><small>SUPPLY</small><strong>10,000</strong></div><div><small>TICKET FEE</small><strong>TBA</strong></div><div><small>CHAIN</small><strong>ARC</strong></div><div><small>DATE</small><strong>TBA</strong></div></div>
+  </div>
+</section>
+
+<section class="section whitelist-section" id="whitelist">
+  <div class="whitelist-inner">
+    <div class="section-heading"><div><span class="kicker">05 / CHECK YOUR TICKET</span><h2>Are You In The Circus?</h2></div><p>Enter the wallet you used for your application. The Ringmaster's list will tell you if you've been whitelisted.</p></div>
+    <form id="whitelistForm" class="whitelist-checker">
+      <label for="whitelistWallet">EVM Wallet Address</label>
+      <div class="whitelist-input-row"><input id="whitelistWallet" name="wallet_address" inputmode="text" autocomplete="off" placeholder="0x..." required><button class="btn btn-primary" type="submit">Check Whitelist →</button></div>
+      <div id="whitelistStatus" class="form-status"></div>
+    </form>
+    <div id="whitelistResult" class="whitelist-result" hidden></div>
+  </div>
+</section>
+
+<section class="section game-section" id="game">
+  <div class="section-heading"><div><span class="kicker">06 / THE STAGE</span><h2>Enter The Game.</h2></div><p>The lights are warming up. The game is being built behind the curtain.</p></div>
+  <button class="btn btn-primary big-btn" data-modal="gameModal">Enter The Stage →</button>
+</section>
+
+<section class="section collab-section" id="collab">
+  <div class="section-heading"><div><span class="kicker">07 / STEP RIGHT UP</span><h2>Bring Your Circus.</h2></div><p>Projects and communities can apply for support from the Clown Ape Circus crowd.</p></div>
+  <button class="btn btn-primary big-btn" data-modal="collabModal">Open Collaboration Application →</button>
+</section>
+</main>
+
+<footer><div class="footer-brand"><img src="assets/clown-ape-circus-logo.png" alt="Clown Ape Circus"></div><p>Clown Ape Circus © 2026. Built for the chaos.</p><a href="https://x.com/ClownApeCircus" target="_blank" rel="noopener">Follow the Circus on X ↗</a></footer>
+</div>
+
+<!-- Join application -->
+<div class="modal" id="joinModal"><div class="modal-backdrop" data-close></div><div class="modal-card">
+<button class="close" data-close>×</button><span class="kicker">WHITELIST APPLICATION</span><h2>Are You Worthy To Join The Circus?</h2>
+<p>Follow the Circus on X, complete the application and take your shot at a ticket.</p>
+<a class="follow-box" href="https://x.com/ClownApeCircus" target="_blank" rel="noopener">𝕏 &nbsp; Follow @ClownApeCircus on X ↗</a>
+<a class="task-box" href="https://x.com/ClownApeCircus/status/2097299125070966944?s=20" target="_blank" rel="noopener">𝕏 &nbsp; Complete the Circus task on X ↗</a>
+<form id="joinForm">
+<label>X Username<input name="x_username" placeholder="@yourusername" required></label>
+<label>EVM Address<input name="evm_address" placeholder="0x..." required></label>
+<label>Comment Link<input name="comment_link" type="url" placeholder="https://x.com/..." required></label>
+<label>Quote Tweet Link<input name="quote_tweet_link" type="url" placeholder="https://x.com/ClownApeCircus/status/..." required><small>Quote-tweet the Circus task post above, then paste the link to your quote tweet here.</small></label>
+<fieldset><legend>Are You Worthy To Join The Circus? *</legend>
+<label class="choice"><input type="radio" name="worthy" value="Yes" required> Yes</label>
+<label class="choice"><input type="radio" name="worthy" value="No"> No</label>
+<label class="choice"><input type="radio" name="worthy" value="Wooo Woooo"> Wooo Woooo 🦧</label>
+</fieldset>
+<button class="btn btn-primary full" type="submit">Submit Application →</button><div class="form-status" id="joinStatus"></div>
+</form></div></div>
+
+<!-- Collab application -->
+<div class="modal" id="collabModal"><div class="modal-backdrop" data-close></div><div class="modal-card">
+<button class="close" data-close>×</button><span class="kicker">COLLABORATION APPLICATION</span><h2>Bring Your Project Into The Ring.</h2><p>Tell us how we can make some noise together.</p>
+<form id="collabForm">
+<label>Community / Project Name<input name="project_name" placeholder="Your project" required></label>
+<label>Community / Project Link<input name="project_link" type="url" placeholder="https://..." required></label>
+<label>Average Entries<input name="average_entries" type="number" min="0" placeholder="e.g. 500" required></label>
+<label>Alpha Call Link<input name="alpha_call_link" type="url" placeholder="https://your-alpha-call-link..." ></label>
+<label>Proof of Entries<input name="proof" type="file" accept="image/*,.pdf" required><small>Upload a screenshot, image or PDF showing your entries.</small></label>
+<fieldset><legend>Mode of Support *</legend>
+<label class="choice"><input type="radio" name="support_mode" value="Raid" required> Raid</label>
+<label class="choice"><input type="radio" name="support_mode" value="Alpha call"> Alpha call</label>
+<label class="choice"><input type="radio" name="support_mode" value="Collab Tweet"> Collab Tweet</label>
+</fieldset>
+<button class="btn btn-primary full" type="submit">Send To The Ringmaster →</button><div class="form-status" id="collabStatus"></div>
+</form></div></div>
+
+<div class="modal" id="successModal"><div class="modal-backdrop"></div><div class="modal-card compact"><span class="kicker">MESSAGE RECEIVED</span><h2>The Ringmaster Has Your Application.</h2><p>Your application is in the queue. Share the news and invite someone else into the Circus.</p><a class="btn btn-primary full share-ticket" id="shareTicket" href="#" target="_blank" rel="noopener">𝕏 Share Your Ticket On X →</a><button class="btn btn-secondary full" data-close>Back To The Circus</button></div></div>
+
+<div class="modal" id="gameModal"><div class="modal-backdrop" data-close></div><div class="modal-card compact"><button class="close" data-close>×</button><span class="kicker">THE STAGE</span><h2>The Stage Is In Progress.</h2><p>The lights are on, the crowd is waiting, and the game is being built behind the curtain. The Stage will open when it is ready.</p><button class="btn btn-primary full" data-close>Back To The Circus</button></div></div>
+<script src="config.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="app.js"></script>
+</body></html>
